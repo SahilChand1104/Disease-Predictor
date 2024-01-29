@@ -9,8 +9,8 @@ import pickle
 import streamlit as st
 
 # loading the saved models
-diabetes_model = pickle.load(open('C:/Users/Sahil.SC-NEMO/Desktop/DiabetesHeartDisease/trained_model.sav', 'rb'))
-heart_disease_model = pickle.load(open('C:/Users/Sahil.SC-NEMO/Desktop/DiabetesHeartDisease/trained_model_for_heart.sav', 'rb'))
+diabetes_model = pickle.load(open('trained_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('trained_model_for_heart.sav', 'rb'))
 
 # Sidebar
 selected = st.sidebar.radio(
